@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juny — Your NYC Local</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Profile screen ── -->
+  <div id="profile-screen" class="screen active">
+    <div class="profile-screen-inner">
+      <div class="logo-lockup">
+        <div class="logo-mark">J</div>
+        <div class="logo-text">
+          <h1>Juny</h1>
+          <p>Your NYC local friend</p>
+        </div>
+      </div>
+
+      <div class="profile-heading">
+        <p>How are you adventuring today?</p>
+      </div>
+
+      <div class="profile-cards">
+        <button class="profile-card" data-profile="college_student">
+          <div class="card-icon">🎓</div>
+          <div class="card-copy">
+            <span class="card-title">Just Vibing</span>
+            <span class="card-sub">Cheap eats, late nights, real talk</span>
+          </div>
+          <div class="card-arrow">→</div>
+        </button>
+
+        <button class="profile-card" data-profile="family_kids">
+          <div class="card-icon">👨‍👩‍👧</div>
+          <div class="card-copy">
+            <span class="card-title">Travelling with Kids</span>
+            <span class="card-sub">Fun, safe, and surprisingly cool</span>
+          </div>
+          <div class="card-arrow">→</div>
+        </button>
+
+        <button class="profile-card" data-profile="adult_explorer">
+          <div class="card-icon">🗽</div>
+          <div class="card-copy">
+            <span class="card-title">Culture First</span>
+            <span class="card-sub">History, culture, the real story</span>
+          </div>
+          <div class="card-arrow">→</div>
+        </button>
+      </div>
+
+      <p class="footer-note">Tap a profile to start your tour</p>
+    </div>
+  </div>
+
+  <!-- ── Call screen ── -->
+  <div id="call-screen" class="screen">
+    <div class="call-screen-inner">
+
+      <!-- Top bar -->
+      <div class="call-topbar">
+        <button id="back-btn" class="icon-btn" title="Change profile">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div id="profile-pill"></div>
+        <div style="width:32px"></div><!-- spacer -->
+      </div>
+
+      <!-- Avatar area -->
+      <div class="avatar-area">
+        <div id="avatar-rings">
+          <div class="ring r3"></div>
+          <div class="ring r2"></div>
+          <div class="ring r1"></div>
+          <div id="avatar-core">
+            <span>J</span>
+          </div>
+        </div>
+        <div id="call-status-label">Ready to talk</div>
+      </div>
+
+      <!-- Conversation feed -->
+      <div id="feed-wrapper">
+        <div id="conversation-feed"></div>
+      </div>
+
+      <!-- Live transcript bar -->
+      <div id="live-bar" class="hidden">
+        <div id="live-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <span id="live-text"></span>
+      </div>
+
+      <!-- Call button -->
+      <div class="call-btn-area">
+        <div id="status-bar"></div>
+        <button id="call-btn" class="call-btn-idle">
+          <span id="call-btn-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="currentColor" fill-opacity="0.15"/>
+            </svg>
+          </span>
+          <span id="call-btn-label">Start talking to Juny!</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
