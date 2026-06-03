@@ -6,6 +6,12 @@ Juny is a voice agent that acts as your personalized NYC local friend. Tell Juny
 
 ---
 
+## Live Demo
+
+🔗 **[https://juny-1004147196282.us-central1.run.app](https://juny-1004147196282.us-central1.run.app)**
+
+---
+
 ## Demo
 
 Pick who you are → hit **Start talking to Juny!** → Juny auto-detects your location and starts the conversation.
